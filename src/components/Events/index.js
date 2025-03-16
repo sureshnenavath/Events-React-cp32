@@ -72,36 +72,13 @@ class Events extends Component {
     const {activeEventId} = this.state
     const activeEvent = eventsList.find(event => event.id === activeEventId)
 
-    if (activeEvent) {
-      let imageUrl, altText
-      switch (activeEvent.registrationStatus) {
-        case 'YET_TO_REGISTER':
-          imageUrl =
-            'https://assets.ccbp.in/frontend/react-js/events-register-img.png'
-          altText = 'yet to register'
-          break
-        case 'REGISTERED':
-          imageUrl =
-            'https://assets.ccbp.in/frontend/react-js/events-regestered-img.png'
-          altText = 'registered'
-          break
-        case 'REGISTRATIONS_CLOSED':
-          imageUrl =
-            'https://assets.ccbp.in/frontend/react-js/events-registrations-closed-img.png'
-          altText = 'registrations closed'
-          break
-        default:
-          return null
-      }
       return (
         <ActiveEventRegistrationDetails
-          imageUrl={imageUrl}
-          altText={altText}
           status={activeEvent.registrationStatus}
         />
       )
     }
-    return null
+
   }
 
   render() {
