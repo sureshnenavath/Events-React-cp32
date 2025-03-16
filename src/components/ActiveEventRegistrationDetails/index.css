@@ -1,4 +1,3 @@
-/* Write your CSS here */
 .registration-details {
   text-align: center;
 }
@@ -6,4 +5,44 @@
 .registration-image {
   width: 100%;
   height: auto;
+  margin-bottom: 20px;
+}
+
+.registration-text {
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.register-button {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.register-button:hover {
+  background-color: #2563eb;
+}
+
+.registered-heading {
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.closed-heading {
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+  margin: 10px 0;
 }
