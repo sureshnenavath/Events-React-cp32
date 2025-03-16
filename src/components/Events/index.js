@@ -78,9 +78,6 @@ class Events extends Component {
         />
       )
     }
-
-  }
-
   render() {
     const {activeEventId} = this.state
 
